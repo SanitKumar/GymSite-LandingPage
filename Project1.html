@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Fitness Club</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Roboto:wght@500&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* CSS Reset */
+        body {
+            padding: 0px;
+            margin: 0px;
+            color: white;
+            background: url('img2.jpg');
+        }
+
+        .left {
+            position: absolute;
+            left: 50px;
+            top: 13px;
+            display: inline-block;
+            /* border: 2px solid red; */
+        }
+
+        .left img {
+            display: block;
+            width: 85px;
+            margin: auto;
+            border-radius: 75px;
+        }
+
+        .left div {
+            text-align: center;
+            font-size: 19px;
+        }
+
+        .mid {
+            display: block;
+            width: 40%;
+            margin: 2px auto;
+            /* border: 2px solid green; */
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: aqua;
+            padding: 25px 25px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: white
+        }
+
+        .right {
+            position: absolute;
+            right: 20px;
+            top: 13px;
+            display: inline-block;
+            /* border: 2px solid yellow; */
+        }
+
+        .btn {
+            border: 2px solid white;
+            margin: 0px 10px;
+            padding: 5px 15px;
+            color: white;
+            font-size: 17px;
+            border-radius: 15px;
+            background-color: rgb(8 11 55);
+            cursor: pointer;
+            font-family: 'Acme', sans-serif;
+        }
+
+        .btn:hover {
+            background-color: blue;
+        }
+
+        .container {
+            /* border: 3px solid rgb(3, 10, 79); */
+            margin: 200px 5px;
+            padding: 23px 40px;
+            width: 40%;
+            border-radius: 20px;
+        }
+
+        .form-group input {
+            text-align: center;
+            width: 500px;
+            display: block;
+            margin: 12px auto;
+            padding: 4px;
+            border: 2px solid black;
+            font-size: 20px;
+            border-radius: 15px;
+        }
+
+        .container h3 {
+            text-align: center;
+            color: aqua;
+            font-size: 40px;
+        }
+
+        .container button {
+            display: block;
+            width: 500px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="logo.webp" alt="">
+            <div><strong>The Fitness Club</strong></div>
+        </div>
+
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Details</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email US</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h3>Join The Best Gym of Jaipur Now</h3>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Contact Number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
